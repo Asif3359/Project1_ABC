@@ -280,7 +280,14 @@ public class login1 extends javax.swing.JFrame {
                         StudentPageFrame.pack();
                         StudentPageFrame.setLocationRelativeTo(null);
                         this.dispose();
-                    }else if(role.equals(userRole) && role.equals("Guest")){
+                    }else if (role.equals(userRole) && role.equals("Teacher")) {
+                        Teacher TeacherFrame = new Teacher();
+                        TeacherFrame.setVisible(true);
+                        TeacherFrame.pack();
+                        TeacherFrame.setLocationRelativeTo(null);
+                        this.dispose();
+                    }
+                    else if(role.equals(userRole) && role.equals("Guest")){
                         GuestPage GuestPageFrame = new GuestPage();
                         GuestPageFrame.setVisible(true);
                         GuestPageFrame.pack();
