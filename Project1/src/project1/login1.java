@@ -4,6 +4,8 @@
  */
 package project1;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -181,7 +183,7 @@ public class login1 extends javax.swing.JFrame {
                     .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSingUp, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         logInRole.getAccessibleContext().setAccessibleName("");
@@ -189,14 +191,14 @@ public class login1 extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("ABC ");
+        jLabel6.setText("BUBT");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -272,18 +274,25 @@ public class login1 extends javax.swing.JFrame {
                         AdminPage adminPageFrame = new AdminPage();
                         adminPageFrame.setVisible(true);
                         adminPageFrame.pack();
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        adminPageFrame.setSize(screenSize.width-300, screenSize.height-200);
                         adminPageFrame.setLocationRelativeTo(null);
+                        
                         this.dispose();
                     } else if (role.equals(userRole) && role.equals("Student")) {
                         StudentPage StudentPageFrame = new StudentPage();
                         StudentPageFrame.setVisible(true);
                         StudentPageFrame.pack();
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        StudentPageFrame.setSize(screenSize.width-300, screenSize.height-200);
                         StudentPageFrame.setLocationRelativeTo(null);
                         this.dispose();
                     }else if (role.equals(userRole) && role.equals("Teacher")) {
                         Teacher TeacherFrame = new Teacher();
                         TeacherFrame.setVisible(true);
                         TeacherFrame.pack();
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        TeacherFrame.setSize(screenSize.width-300, screenSize.height-200);
                         TeacherFrame.setLocationRelativeTo(null);
                         this.dispose();
                     }
@@ -291,6 +300,8 @@ public class login1 extends javax.swing.JFrame {
                         GuestPage GuestPageFrame = new GuestPage();
                         GuestPageFrame.setVisible(true);
                         GuestPageFrame.pack();
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        GuestPageFrame.setSize(screenSize.width-300, screenSize.height-200);
                         GuestPageFrame.setLocationRelativeTo(null);
                         this.dispose();
                         //GuestPage

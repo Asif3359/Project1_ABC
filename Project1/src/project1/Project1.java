@@ -14,7 +14,7 @@ public class Project1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+//         TODO code application logic here
         login1 login1Frame  = new login1();
         login1Frame.setVisible(true);
         login1Frame.pack();

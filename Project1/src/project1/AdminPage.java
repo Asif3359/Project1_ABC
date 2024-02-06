@@ -40,6 +40,7 @@ public class AdminPage extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         AddStudentPanel = new javax.swing.JPanel();
@@ -52,10 +53,21 @@ public class AdminPage extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        viewTeacherPanel = new javax.swing.JPanel();
+        viewTeacherTable1 = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
         jPanel1 = new javax.swing.JPanel();
+        forViewTeacher = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        TeacherDataTable = new javax.swing.JTable();
         forTeacher = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
         jPanel7 = new javax.swing.JPanel();
         tDept = new javax.swing.JComboBox<>();
         tSubmit = new javax.swing.JButton();
@@ -73,6 +85,7 @@ public class AdminPage extends javax.swing.JFrame {
         forStudent = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
         jPanel5 = new javax.swing.JPanel();
         addStIntake = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -99,6 +112,17 @@ public class AdminPage extends javax.swing.JFrame {
         StudetnsData = new javax.swing.JTable();
 
         jLabel2.setText("jLabel2");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Admin");
@@ -132,7 +156,7 @@ public class AdminPage extends javax.swing.JFrame {
         );
         AddStudentPanelLayout.setVerticalGroup(
             AddStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(AddStudent1, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+            .addComponent(AddStudent1, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         AddTeacherPanel.setBackground(new java.awt.Color(153, 153, 255));
@@ -161,6 +185,7 @@ public class AdminPage extends javax.swing.JFrame {
 
         viewStudentPanel.setBackground(new java.awt.Color(153, 153, 255));
 
+        ViewStudentTable1.setBackground(new java.awt.Color(255, 255, 255));
         ViewStudentTable1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         ViewStudentTable1.setForeground(new java.awt.Color(255, 255, 255));
         ViewStudentTable1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -175,7 +200,7 @@ public class AdminPage extends javax.swing.JFrame {
         viewStudentPanel.setLayout(viewStudentPanelLayout);
         viewStudentPanelLayout.setHorizontalGroup(
             viewStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ViewStudentTable1, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
+            .addComponent(ViewStudentTable1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
         );
         viewStudentPanelLayout.setVerticalGroup(
             viewStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,21 +211,49 @@ public class AdminPage extends javax.swing.JFrame {
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
 
+        viewTeacherPanel.setBackground(new java.awt.Color(153, 153, 255));
+
+        viewTeacherTable1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        viewTeacherTable1.setForeground(new java.awt.Color(255, 255, 255));
+        viewTeacherTable1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        viewTeacherTable1.setText("View Teacher");
+        viewTeacherTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                viewTeacherTable1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout viewTeacherPanelLayout = new javax.swing.GroupLayout(viewTeacherPanel);
+        viewTeacherPanel.setLayout(viewTeacherPanelLayout);
+        viewTeacherPanelLayout.setHorizontalGroup(
+            viewTeacherPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(viewTeacherTable1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        viewTeacherPanelLayout.setVerticalGroup(
+            viewTeacherPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(viewTeacherTable1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSeparator4)
-                    .addComponent(AddStudentPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AddTeacherPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(viewStudentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jSeparator2)
-                    .addComponent(jSeparator3)
-                    .addComponent(jSeparator1))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator6)
+                    .addComponent(jSeparator5)
+                    .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(AddStudentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AddTeacherPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(viewStudentPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jSeparator1))
+                    .addComponent(viewTeacherPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -210,18 +263,24 @@ public class AdminPage extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addGap(35, 35, 35)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AddStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AddTeacherPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(4, 4, 4)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(viewStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(viewTeacherPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -236,6 +295,77 @@ public class AdminPage extends javax.swing.JFrame {
             }
         });
         jPanel1.setLayout(new javax.swing.OverlayLayout(jPanel1));
+
+        jPanel9.setBackground(new java.awt.Color(204, 204, 255));
+
+        jPanel10.setBackground(new java.awt.Color(153, 153, 255));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("Teacher Table");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
+        );
+
+        TeacherDataTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Teacher id", "User Id ", "Name", "Email", "Phone", "Address", "Dept", "Password"
+            }
+        ));
+        TeacherDataTable.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                TeacherDataTableAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jScrollPane2.setViewportView(TeacherDataTable);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane2)
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout forViewTeacherLayout = new javax.swing.GroupLayout(forViewTeacher);
+        forViewTeacher.setLayout(forViewTeacherLayout);
+        forViewTeacherLayout.setHorizontalGroup(
+            forViewTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        forViewTeacherLayout.setVerticalGroup(
+            forViewTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(forViewTeacher);
 
         forTeacher.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -252,7 +382,7 @@ public class AdminPage extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -312,7 +442,7 @@ public class AdminPage extends javax.swing.JFrame {
                     .addComponent(tEmail)
                     .addComponent(tPassword)
                     .addComponent(tSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -343,10 +473,12 @@ public class AdminPage extends javax.swing.JFrame {
                 .addComponent(tPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(tSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel7Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {tAddress, tEmail, tPassword, tPhone});
+
+        jScrollPane4.setViewportView(jPanel7);
 
         javax.swing.GroupLayout forTeacherLayout = new javax.swing.GroupLayout(forTeacher);
         forTeacher.setLayout(forTeacherLayout);
@@ -355,15 +487,14 @@ public class AdminPage extends javax.swing.JFrame {
             .addGroup(forTeacherLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         forTeacherLayout.setVerticalGroup(
             forTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(forTeacherLayout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE))
         );
 
         jPanel1.add(forTeacher);
@@ -383,17 +514,17 @@ public class AdminPage extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addContainerGap(25, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addGap(17, 17, 17))
         );
 
         jPanel5.setBackground(new java.awt.Color(204, 204, 255));
@@ -460,6 +591,11 @@ public class AdminPage extends javax.swing.JFrame {
         jLabel15.setText("Address:");
 
         addStSubject.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "CSE", "CIVIL", "Textile", "BBA", "English", "LAW" }));
+        addStSubject.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addStSubjectActionPerformed(evt);
+            }
+        });
 
         SubmitStudentPanel.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -478,11 +614,13 @@ public class AdminPage extends javax.swing.JFrame {
         SubmitStudentPanel.setLayout(SubmitStudentPanelLayout);
         SubmitStudentPanelLayout.setHorizontalGroup(
             SubmitStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SubmitStudent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(SubmitStudent, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
         );
         SubmitStudentPanelLayout.setVerticalGroup(
             SubmitStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SubmitStudent, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SubmitStudentPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(SubmitStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         stPass.setDisplayedMnemonic('P');
@@ -501,43 +639,41 @@ public class AdminPage extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel5Layout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(addStName, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(addStIntake, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(addStSection, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
+                        .addGroup(jPanel5Layout.createSequentialGroup()
                             .addContainerGap()
-                            .addComponent(addStSubject, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(addStName, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(addStIntake, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(addStSection, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                    .addComponent(addStAddress, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(addStEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(addStPhone, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE))))
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                .addComponent(addStAddress, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
+                        .addGroup(jPanel5Layout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addComponent(addStEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE))
+                        .addGroup(jPanel5Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(addStPhone, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-                                .addComponent(SubmitStudentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(stPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(addStPassword))
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(229, Short.MAX_VALUE))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(addStSubject, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                                    .addComponent(stPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(addStPassword))
+                                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(SubmitStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel5Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addStAddress, addStEmail, addStIntake, addStName, addStPhone, addStSection, jLabel15, jLabel6, jLabel7, jLabel8, jLabel9});
@@ -573,29 +709,32 @@ public class AdminPage extends javax.swing.JFrame {
                 .addComponent(stPass, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addStPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addStSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(SubmitStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jScrollPane3.setViewportView(jPanel5);
 
         javax.swing.GroupLayout forStudentLayout = new javax.swing.GroupLayout(forStudent);
         forStudent.setLayout(forStudentLayout);
         forStudentLayout.setHorizontalGroup(
             forStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(forStudentLayout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         forStudentLayout.setVerticalGroup(
             forStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(forStudentLayout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE))
         );
 
         jPanel1.add(forStudent);
@@ -654,7 +793,7 @@ public class AdminPage extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(forViewStudentLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 524, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 459, Short.MAX_VALUE)
                 .addContainerGap())
         );
         forViewStudentLayout.setVerticalGroup(
@@ -662,7 +801,7 @@ public class AdminPage extends javax.swing.JFrame {
             .addGroup(forViewStudentLayout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE))
         );
 
         jPanel1.add(forViewStudent);
@@ -673,9 +812,10 @@ public class AdminPage extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 536, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -709,73 +849,6 @@ public class AdminPage extends javax.swing.JFrame {
     private void addStAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addStAddressActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addStAddressActionPerformed
-
-    private void AddStudent1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddStudent1MouseClicked
-        // TODO add your handling code here:
-        forStudent.setVisible(true);
-        forTeacher.setVisible(false);
-        forViewStudent.setVisible(false);
-        // addStudent.setForeground(Color.red);
-        AddStudentPanel.setBackground(Color.white);
-
-        int red = Integer.parseInt("99", 16);
-        int green = Integer.parseInt("99", 16);
-        int blue = Integer.parseInt("FF", 16);
-
-        Color myColor = new Color(red, green, blue);
-
-        AddTeacherPanel.setBackground(myColor);
-        viewStudentPanel.setBackground(myColor);
-
-        AddStudent1.setForeground(Color.black);
-        AddTeacher1.setForeground(Color.white);
-        ViewStudentTable1.setForeground(Color.white);
-    }//GEN-LAST:event_AddStudent1MouseClicked
-
-    private void AddTeacher1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddTeacher1MouseClicked
-        // TODO add your handling code here:
-        forTeacher.setVisible(true);
-        forStudent.setVisible(false);
-        forViewStudent.setVisible(false);
-
-        AddTeacherPanel.setBackground(Color.white);
-
-        int red = Integer.parseInt("99", 16);
-        int green = Integer.parseInt("99", 16);
-        int blue = Integer.parseInt("FF", 16);
-
-        Color myColor = new Color(red, green, blue);
-
-        AddStudentPanel.setBackground(myColor);
-        viewStudentPanel.setBackground(myColor);
-
-        AddTeacher1.setForeground(Color.black);
-        AddStudent1.setForeground(Color.white);
-        ViewStudentTable1.setForeground(Color.white);
-
-    }//GEN-LAST:event_AddTeacher1MouseClicked
-
-    private void ViewStudentTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewStudentTable1MouseClicked
-        // TODO add your handling code here:
-        forViewStudent.setVisible(true);
-        forStudent.setVisible(false);
-        forTeacher.setVisible(false);
-        // 9999FF
-        viewStudentPanel.setBackground(Color.white);
-
-        int red = Integer.parseInt("99", 16);
-        int green = Integer.parseInt("99", 16);
-        int blue = Integer.parseInt("FF", 16);
-
-        Color myColor = new Color(red, green, blue);
-
-        AddStudentPanel.setBackground(myColor);
-        AddTeacherPanel.setBackground(myColor);
-
-        ViewStudentTable1.setForeground(Color.black);
-        AddTeacher1.setForeground(Color.white);
-        AddStudent1.setForeground(Color.white);
-    }//GEN-LAST:event_ViewStudentTable1MouseClicked
 
     private void SubmitStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubmitStudentMouseClicked
         // TODO add your handling code here:
@@ -869,6 +942,7 @@ public class AdminPage extends javax.swing.JFrame {
         forStudent.setVisible(true);
         forTeacher.setVisible(false);
         forViewStudent.setVisible(false);
+        forViewTeacher.setVisible(false);
         // addStudent.setForeground(Color.red);
         AddStudentPanel.setBackground(Color.white);
 
@@ -880,10 +954,12 @@ public class AdminPage extends javax.swing.JFrame {
 
         AddTeacherPanel.setBackground(myColor);
         viewStudentPanel.setBackground(myColor);
+        viewTeacherPanel.setBackground(myColor);
 
         AddStudent1.setForeground(Color.black);
         AddTeacher1.setForeground(Color.white);
         ViewStudentTable1.setForeground(Color.white);
+        viewTeacherTable1.setForeground(Color.white);
     }//GEN-LAST:event_jPanel1AncestorAdded
 
     private void tEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tEmailActionPerformed
@@ -935,9 +1011,9 @@ public class AdminPage extends javax.swing.JFrame {
                         userRole = rs.getString("Role");
 //                    System.out.println("User ID: " + userId + ", Email: " + userEmail + ", Password: " + userPassword);
                     }
-                     // System.out.println("User ID: " + userId + ", Email: " + userEmail + ", Password: " + userPassword);
-                     
-                    query = "INSERT INTO teachertable ( user_ID, Name , Email, Phone, Address, Dept, Password) VALUES ( '" + userId + "','" + Name + "','" + Email + "','" + Phone + "','" + Address + "', '"+Dept+"','" + Password + "')";
+                    // System.out.println("User ID: " + userId + ", Email: " + userEmail + ", Password: " + userPassword);
+
+                    query = "INSERT INTO teachertable ( user_ID, Name , Email, Phone, Address, Dept, Password) VALUES ( '" + userId + "','" + Name + "','" + Email + "','" + Phone + "','" + Address + "', '" + Dept + "','" + Password + "')";
                     int rowsAffected2 = stmt.executeUpdate(query);
 
                     if (rowsAffected2 > 0) {
@@ -960,6 +1036,116 @@ public class AdminPage extends javax.swing.JFrame {
             Logger.getLogger(login1.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_tSubmitActionPerformed
+
+    private void viewTeacherTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewTeacherTable1MouseClicked
+        // TODO add your handling code here:
+        forViewTeacher.setVisible(true);
+        forStudent.setVisible(false);
+        forTeacher.setVisible(false);
+        forViewStudent.setVisible(false);
+
+        // addStudent.setForeground(Color.red); viewTeacherPanel
+        viewTeacherPanel.setBackground(Color.white);
+
+        int red = Integer.parseInt("99", 16);
+        int green = Integer.parseInt("99", 16);
+        int blue = Integer.parseInt("FF", 16);
+
+        Color myColor = new Color(red, green, blue);
+
+        AddTeacherPanel.setBackground(myColor);
+        viewStudentPanel.setBackground(myColor);
+        AddStudentPanel.setBackground(myColor);
+
+        viewTeacherTable1.setForeground(Color.black);
+        AddStudent1.setForeground(Color.white);
+        AddTeacher1.setForeground(Color.white);
+        ViewStudentTable1.setForeground(Color.white);
+    }//GEN-LAST:event_viewTeacherTable1MouseClicked
+
+    private void ViewStudentTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewStudentTable1MouseClicked
+        // TODO add your handling code here:
+        forViewStudent.setVisible(true);
+        forStudent.setVisible(false);
+        forTeacher.setVisible(false);
+        forViewTeacher.setVisible(false);
+        // 9999FF
+        viewStudentPanel.setBackground(Color.white);
+
+        int red = Integer.parseInt("99", 16);
+        int green = Integer.parseInt("99", 16);
+        int blue = Integer.parseInt("FF", 16);
+
+        Color myColor = new Color(red, green, blue);
+
+        AddStudentPanel.setBackground(myColor);
+        AddTeacherPanel.setBackground(myColor);
+        viewTeacherPanel.setBackground(myColor);
+
+        ViewStudentTable1.setForeground(Color.black);
+        AddTeacher1.setForeground(Color.white);
+        AddStudent1.setForeground(Color.white);
+        viewTeacherTable1.setForeground(Color.white);
+    }//GEN-LAST:event_ViewStudentTable1MouseClicked
+
+    private void AddTeacher1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddTeacher1MouseClicked
+        // TODO add your handling code here:
+        forTeacher.setVisible(true);
+        forStudent.setVisible(false);
+        forViewStudent.setVisible(false);
+        forViewTeacher.setVisible(false);
+
+        AddTeacherPanel.setBackground(Color.white);
+
+        int red = Integer.parseInt("99", 16);
+        int green = Integer.parseInt("99", 16);
+        int blue = Integer.parseInt("FF", 16);
+
+        Color myColor = new Color(red, green, blue);
+
+        AddStudentPanel.setBackground(myColor);
+        viewStudentPanel.setBackground(myColor);
+        viewTeacherPanel.setBackground(myColor);
+
+        AddTeacher1.setForeground(Color.black);
+        AddStudent1.setForeground(Color.white);
+        ViewStudentTable1.setForeground(Color.white);
+        viewTeacherTable1.setForeground(Color.white);
+    }//GEN-LAST:event_AddTeacher1MouseClicked
+
+    private void AddStudent1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddStudent1MouseClicked
+        // TODO add your handling code here:
+        forStudent.setVisible(true);
+        forTeacher.setVisible(false);
+        forViewStudent.setVisible(false);
+        forViewTeacher.setVisible(false);
+        // addStudent.setForeground(Color.red);
+        AddStudentPanel.setBackground(Color.white);
+
+        int red = Integer.parseInt("99", 16);
+        int green = Integer.parseInt("99", 16);
+        int blue = Integer.parseInt("FF", 16);
+
+        Color myColor = new Color(red, green, blue);
+
+        AddTeacherPanel.setBackground(myColor);
+        viewStudentPanel.setBackground(myColor);
+        viewTeacherPanel.setBackground(myColor);
+
+        AddStudent1.setForeground(Color.black);
+        AddTeacher1.setForeground(Color.white);
+        ViewStudentTable1.setForeground(Color.white);
+        viewTeacherTable1.setForeground(Color.white);
+    }//GEN-LAST:event_AddStudent1MouseClicked
+
+    private void TeacherDataTableAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_TeacherDataTableAncestorAdded
+        // TODO add your handling code here:
+        loadDataIntoTable2();
+    }//GEN-LAST:event_TeacherDataTableAncestorAdded
+
+    private void addStSubjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addStSubjectActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addStSubjectActionPerformed
 
     private void loadDataIntoTable() {
         DefaultTableModel model = (DefaultTableModel) StudetnsData.getModel();
@@ -988,6 +1174,47 @@ public class AdminPage extends javax.swing.JFrame {
                     resultSet.getString("Phone"),
                     resultSet.getString("Address"),
                     resultSet.getString("Subject"),
+                    resultSet.getString("Password")
+                };
+                model.addRow(row);
+            }
+
+            // Close resources
+            // resultSet.close();
+            // statement.close();
+            // connection.close();
+        } catch (SQLException ex) {
+            // Handle exceptions
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(AdminPage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+        private void loadDataIntoTable2() {
+        DefaultTableModel model = (DefaultTableModel) TeacherDataTable.getModel();
+        model.setRowCount(0); // Clear existing rows
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
+
+            // Prepare SQL query
+            String sql = "SELECT Teacher_id, user_ID, Name, Email, Phone, Address, Dept , Password FROM teachertable ORDER BY Teacher_id ; ";
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            // Execute query and get result set
+            ResultSet resultSet = statement.executeQuery();
+
+            // Populate data into JTable
+            while (resultSet.next()) {
+                Object[] row = {
+                    resultSet.getInt("Teacher_id"),
+                    resultSet.getInt("user_ID"),
+                    resultSet.getString("Name"),
+                    resultSet.getString("Email"),
+                    resultSet.getString("Phone"),
+                    resultSet.getString("Address"),
+                    resultSet.getString("Dept"),
                     resultSet.getString("Password")
                 };
                 model.addRow(row);
@@ -1047,6 +1274,7 @@ public class AdminPage extends javax.swing.JFrame {
     private javax.swing.JTable StudetnsData;
     private javax.swing.JLabel SubmitStudent;
     private javax.swing.JPanel SubmitStudentPanel;
+    private javax.swing.JTable TeacherDataTable;
     private javax.swing.JLabel TeacherEmail;
     private javax.swing.JLabel ViewStudentTable1;
     private javax.swing.JTextField addStAddress;
@@ -1060,6 +1288,7 @@ public class AdminPage extends javax.swing.JFrame {
     private javax.swing.JPanel forStudent;
     private javax.swing.JPanel forTeacher;
     private javax.swing.JPanel forViewStudent;
+    private javax.swing.JPanel forViewTeacher;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1069,6 +1298,7 @@ public class AdminPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1078,17 +1308,25 @@ public class AdminPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JLabel stPass;
     private javax.swing.JTextField tAddress;
     private javax.swing.JComboBox<String> tDept;
@@ -1098,5 +1336,7 @@ public class AdminPage extends javax.swing.JFrame {
     private javax.swing.JTextField tPhone;
     private javax.swing.JButton tSubmit;
     private javax.swing.JPanel viewStudentPanel;
+    private javax.swing.JPanel viewTeacherPanel;
+    private javax.swing.JLabel viewTeacherTable1;
     // End of variables declaration//GEN-END:variables
 }
